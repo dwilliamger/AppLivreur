@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top"
+    android:orientation="vertical" 
+    android:background="@drawable/background">
+ 
+    <EditText
+        android:id="@+id/etMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="61dp"
+        android:ems="10"
+        android:hint="            Adresse email"
+        android:inputType="textEmailAddress" 
+        android:background="@drawable/input_mail"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etMail"
+        android:layout_below="@+id/etMail"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="     Mot de passe"
+        android:inputType="textPassword" 
+        android:background="@drawable/input_mdp"
+        android:textColor="#000000">
+
+       
+    </EditText>
+
+    <Button
+        android:id="@+id/btConnecter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/etPassword"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginRight="72dp"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/btn_connexion"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/btContacter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_contact_support"
+        android:text=" " />
+
+
+</RelativeLayout>
